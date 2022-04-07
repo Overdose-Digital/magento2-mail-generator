@@ -1,0 +1,71 @@
+////
+/// @group alignment
+////
+
+table,
+th,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  &.text-center {
+    text-align: center;
+  }
+
+  &.text-left {
+    text-align: left;
+  }
+
+  &.text-right {
+    text-align: right;
+  }
+}
+
+span.text-center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.float-left {
+  float: left;
+  text-align: left;
+}
+
+img.float-right {
+  float: right;
+  text-align: right;
+}
+
+img.float-center,
+img.text-center {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+}
+
+table,
+td,
+th {
+  &.float-center {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+  &.float-left {
+    float: left;
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  &.float-right {
+    float: right;
+    text-align: right;
+    margin-right: 0;
+  }
+}

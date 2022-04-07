@@ -1,0 +1,83 @@
+//
+//  The contents of this file will get split into two output files: email.less and email-inline.less.
+//
+//  email.less
+//  Styles contained in the .email-non-inline() and .media-width() mixins will be output in the email.less file
+//  and will be included in a <style> tag in emails. Non-inline styles should be used for styles that can't be applied
+//  as inline CSS, such as media queries.
+//
+//  email-inline.less
+//  Styles not included in the mixins mentioned above will be included in the email-inline.less file.
+//  Since email client support for CSS in <style> tags is limited, the majority of styles should be added as "inline"
+//  styles. CSS will be applied to transactional email HTML via the Emogrifier library, which only has support for
+//  certain CSS selectors (source: https://github.com/jjriv/emogrifier#supported-css-selectors):
+//
+//  Supported selectors (examples in parenthesis):
+//      * ID (#logo)
+//      * class (.logo)
+//      * type (h1)
+//      * descendant (.logo > a)
+//      * child (.logo a)
+//      * adjacent (.logo + .second-example)
+//      * attribute presence (a[title])
+//      * attribute value (a[title="example"])
+//      * attribute only ([title="example"])
+//
+//  Unsupported selectors (examples in parenthesis):
+//      * first-child (div:first-child)
+//      * last-child (div:last-child)
+//      * nth-child (div:nth-child(3n+1))
+//      * universal (*)
+//      * pseudo (a:hover, a:active, a:focus, span:before, span:after, etc)
+
+//
+//  Variables
+//  _____________________________________________
+
+@font-size-unit-convert: false; // Prevents font-related measurements from being converted to the incompatible rem unit
+
+.email-non-inline() {
+    //  Remove link color on iOS
+    .no-link a {
+        cursor: default !important;
+        text-decoration: none !important;
+    }
+
+    h1 a:visited,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
+      color: @link__color;
+    }
+
+    a {
+        &:hover {
+          color: @link__hover-color !important;
+          text-decoration: @link__text-decoration !important;
+        }
+      
+        &:active {
+          color: @link__color;
+        }
+      
+        &:visited {
+          color: @link__color;
+        }
+    }
+
+    table.button:hover table td,
+    table.button:hover table tr td a,
+    table.button:active table tr td a,
+    table.button a:hover
+    {
+      background: @button__background--hover !important;
+      color: @button__color--hover !important;
+    }
+    
+    table.button table tr td a:visited
+    {
+      color: @button__color !important;
+    }
+}

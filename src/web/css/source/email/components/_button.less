@@ -1,0 +1,106 @@
+table.button {
+  width: auto;
+  margin: @button__margin;
+
+  table {
+    td {
+      text-align: left;
+      color: @button__color;
+      background: @button__background;
+      border: @button__border;
+
+      a {
+        font-family: @button__font-family;
+        font-size: @button__font-size;
+        font-weight: @button__font-weight;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: @button__color;
+        display: inline-block;
+        border-radius: @button__radius;
+        padding: @button__padding;
+      }
+    }
+  }
+}
+
+table.button-secondary {
+  width: auto;
+  margin: @button-secondary__margin;
+
+  table {
+    td {
+      text-align: left;
+      color: @button-secondary__color;
+      background: @button-secondary__background;
+      border: @button-secondary__border;
+
+      a {
+        font-family: @button-secondary__font-family;
+        font-size: @button-secondary__font-size;
+        font-weight: @button-secondary__font-weight;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: @button-secondary__color;
+        display: inline-block;
+        border-radius: @button-secondary__radius;
+        padding: @button-secondary__padding;
+      }
+    }
+  }
+}
+
+table.button-link {
+  width: auto;
+  margin: @button-link__margin;
+
+  table {
+    td {
+      text-align: left;
+      color: @button-link__color;
+      background: @button-link__background;
+      border: @button-link__border;
+
+      a {
+        font-family: @button-link__font-family;
+        font-size: @button-link__font-size;
+        font-weight: @button-link__font-weight;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: @button-link__color;
+        display: inline-block;
+        border-radius: @button-link__radius;
+        padding: @button-link__padding;
+      }
+    }
+  }
+}
+
+//mod
+.button--w-100 {
+  width: 100% !important;
+
+  table {
+    width: 100%;
+
+    a {
+      text-align: center;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  center {
+    min-width: 0;
+  }
+}

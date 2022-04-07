@@ -1,0 +1,35 @@
+table.table-content {
+    background-color: @table-content__background-color;
+    width: @table-content__width;
+    max-width: @table-content__width;
+    margin: 0 auto;
+    text-align: inherit;
+}
+
+.table-content {
+    &__inner {
+        padding: @table-content__padding;
+    }
+
+    h1 {
+        font-family: @font-family__base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0 0 25px 0;
+    }
+
+    &__text {
+        font-family: @font-family__base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 34px;
+    }
+
+    &__email-link {
+        text-decoration: underline;
+    }
+}

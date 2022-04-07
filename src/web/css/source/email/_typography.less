@@ -1,0 +1,104 @@
+////
+/// @group typography
+////
+//For viewing email in browser
+html {
+  min-height: 100%;
+}
+
+body {
+  width: 100% !important;
+  min-width: @body__width;
+  background-color: @body__background;
+  color: @body__color;
+  font-family: @font-family__base;
+  font-weight:  @body__font-weight;
+  line-height: @body__line-height;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.email-body {
+  background-color: @email-body__background;
+  height: 100%;
+  width: 100%;
+  max-width: @email-body__width;
+  display: block;
+  margin: 0 auto;
+}
+
+p,
+td,
+th,
+a {
+  color: @body__color;
+  font-family: @font-family__base;
+  font-weight:  @body__font-weight;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: @body__line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-wrap: normal;
+  font-family: @header__font-family;
+  font-weight: @header__font-weight;
+  color: @header__color;
+  padding: 0;
+  margin-bottom: @header__margin-bottom;
+}
+
+h1 {
+  font-size: @h1__font-size;
+}
+
+h2 {
+  font-size: @h2__font-size;
+}
+
+h3 {
+  font-size: @h3__font-size;
+}
+
+h4 {
+  font-size: @h4__font-size;
+}
+
+h5 {
+  font-size: @h5__font-size;
+}
+
+h6 {
+  font-size: @h6__font-size;
+}
+
+p {
+  margin-bottom: @paragraph__margin-bottom;
+}
+
+small {
+  font-size: @small__font-size;
+  color: @small__font-color;
+}
+
+a {
+  color: @link__color;
+  text-decoration: @link__text-decoration;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+  color: @link__color;
+}
