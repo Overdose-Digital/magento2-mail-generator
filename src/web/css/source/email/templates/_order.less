@@ -1,0 +1,236 @@
+// ==========================================================
+// order
+// ==========================================================
+.order-banner {
+
+    &__img {
+        margin: 0 auto;
+    }
+}
+
+.order {
+
+    &__wrap {
+        width: 480px !important;
+    }
+
+    &__sup-title {
+        font-family: @font-family__base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-family: @font-family__base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0 0 40px 0;
+
+        i {
+            font-family: @font-family__secondary;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+
+    &__title-border {
+        border-bottom: 2px solid #000;
+        width: 132px;
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    &__text {
+        font-family: @font-family__base;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 34px;
+    }
+
+    &__email-link {
+        text-decoration: underline;
+    }
+}
+
+.order-info {
+    &__row {
+        width: 480px !important;
+        border: 1px solid @base__border-color  !important;
+    }
+
+    &__col {
+        padding: 20px 18px 15px 18px;
+
+        &--w160 {
+            width: 160px;
+        }
+        &--w240 {
+            width: 240px;
+        }
+
+        &--border-right {
+            border-right: 1px solid @base__border-color !important;
+        }
+    }
+
+    &__name {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 11px;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+}
+
+.order-product {
+    width: 480px !important;
+    margin: 0 auto;
+    border: 1px solid @base__border-color;
+
+    &-thead__item {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 11px;
+        text-align: center;
+        padding: 16px 20px;
+        vertical-align: middle;
+    }
+
+    &-col {
+        border-top: 1px solid @base__border-color;
+    }
+
+    &-col__img {
+        padding: 5px;
+        width: 130px;
+
+        img {
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    &-col__content {
+        vertical-align: top;
+        padding: 10px;
+    }
+
+    &-col__title {
+        font-family: @font-family__secondary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 14px;
+        max-width: 165px;
+    }
+
+    &-col__text {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    &-col__quantity {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+
+    &-col__subtotal {
+        font-family: @font-family__base;
+        color: #000;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+}
+
+.order-total {
+    &__container {
+        width: 480px;
+        max-width: 480px;
+    }
+
+    &__col {
+        width: 230px;
+        max-width: 230px;
+    }
+
+    &__col-center {
+        width: 20px;
+        max-width: 20px;
+    }
+
+
+    &-info {
+        &__table {
+            width: 230px;
+            max-width: 230px;
+            border: 1px solid @base__border-color !important;
+            border-top: none !important;
+        }
+
+        &__line-first,
+        &__line-last {
+            height: 4px;
+        }
+
+        &__item {
+            font-family: @font-family__base;
+            color: #000;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 11px;
+            vertical-align: middle;
+            padding: 10px 10px 10px 20px;
+        }
+    
+        &__total {
+            font-family: @font-family__base;
+            color: #000;
+            font-size: 11px;
+            line-height: 20px;
+            font-style: normal;
+            font-weight: normal;
+            vertical-align: middle;
+            padding: 10px 20px 10px 10px;
+        }
+    }
+}

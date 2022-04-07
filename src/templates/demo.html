@@ -1,0 +1,119 @@
+---
+layout: index-layout
+subject: My Demo Email
+---
+{{>header}}
+<banner>
+  <img src="web/images/email/demo/banner.png" class="banner__img">
+</banner>
+
+<spacer size="50"></spacer>
+
+<table-content>
+  <h1>OD test email</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus metus at bibendum maximus.</p>
+  <p>Morbi nisl nibh, venenatis eget commodo sit amet, suscipit ac erat. Quisque consectetur ac tellus sit amet lobortis.</p>
+  <button href="#">Button</button>
+</table-content>
+
+<h-line></h-line>
+<spacer size="50"></spacer>
+<container class="custom-style">
+  <h2 class="text-center">Custom style for component</h2>
+  <row class="custom-style">
+    <columns col="12" class="custom-style">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium id diam nec ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas vitae condimentum velit. Praesent rhoncus, nisl et vestibulum tincidunt, turpis sem tincidunt mi, nec dictum urna nisi ullamcorper ante. Maecenas eu turpis id urna rhoncus ultrices. Nam maximus sollicitudin pharetra. Donec velit quam, vulputate ut malesuada at, laoreet et magna. Sed vitae risus sed libero posuere feugiat vel vehicula augue. </p>
+     <button class="custom-style" href="#link">btn name</button>
+    </columns>
+  </row>
+</container>
+
+<h-line></h-line>
+<spacer size="50"></spacer>
+<h2 class="text-center">Grid</h2>
+<row>
+  <columns class="demo-col">
+    <center>
+      <img src="https://placehold.co/100x150/777777/&text=images" alt="" class="demo-col__img">
+      <h2>title</h2>
+      <button href="#">Button</button>
+    </center>
+  </columns>
+  <columns class="demo-col">
+    <center>
+      <img src="https://placehold.co/100x150/777777/&text=images" alt="" class="demo-col__img">
+      <h2>title</h2>
+      <button-secondary href="#">Secondary</button-secondary>
+    </center>
+  </columns>
+  <columns class="demo-col">
+    <center>
+      <img src="https://placehold.co/100x150/777777/&text=images" alt="" class="demo-col__img">
+      <h2>title 3</h2>
+      <button-link href="#">Btn link</button-link>
+    </center>
+  </columns>
+</row>
+<spacer size="50"></spacer>
+<row>
+  <columns col="4">
+    <center>
+      <img src="https://placehold.co/100x150/777777/&text=images" alt="" class="demo-col__img">
+    </center>
+  </columns>
+  <columns col="8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium id diam nec ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas vitae condimentum velit. Praesent rhoncus, nisl et vestibulum tincidunt, turpis sem tincidunt mi, nec dictum urna nisi ullamcorper ante. Maecenas eu turpis id urna rhoncus ultrices. Nam maximus sollicitudin pharetra. Donec velit quam, vulputate ut malesuada at, laoreet et magna. Sed vitae risus sed libero posuere feugiat vel vehicula augue. </p>
+  </columns>
+</row>
+<h-line></h-line>
+<spacer size="50"></spacer>
+<h2 class="text-center">Buttons</h2>
+<row>
+  <columns class="demo-col">
+    <center>
+      <button href="#">Button</button>
+    </center>
+  </columns>
+  <columns class="demo-col">
+    <center>
+      <button-secondary href="#">Secondary</button-secondary>
+    </center>
+  </columns>
+  <columns class="demo-col">
+    <center>
+      <button-link href="#">Btn link</button-link>
+    </center>
+  </columns>
+</row>
+<spacer size="50"></spacer>
+
+<h-line></h-line>
+<h2 class="text-center">Spacer</h2>
+<p>Stuff on top</p>
+<spacer size="100"></spacer>
+<p>Stuff on bottom</p>
+
+<h2 class="text-center">Alignment</h2>
+<style>.alignment-col {border: 1px solid #333;}</style>
+<h3 class="text-center">Text Alignment</h3>
+<row>
+  <columns class="alignment-col">
+    <p class="text-left">Left (default)</p>
+  </columns>
+  <columns class="alignment-col">
+      <p class="text-center">center</p>
+  </columns>
+  <columns class="alignment-col">
+      <p class="text-right">right</p>
+  </columns>
+</row>
+<h3 class="text-center">Aligning Images</h3>
+<row>
+  <columns>
+    <img class="float-left" src="https://via.placeholder.com/140x100" alt="">
+    <img class="float-center" src="https://via.placeholder.com/140x100" alt="">
+    <img class="float-right" src="https://via.placeholder.com/140x100" alt="">
+  </columns>
+</row>
+<banner><img src="web/images/email/demo/banner-2.png" class="banner__img"></banner>
+{{>footer}}
